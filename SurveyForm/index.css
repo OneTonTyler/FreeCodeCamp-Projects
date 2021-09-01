@@ -1,1 +1,29 @@
+/* CSS Selector */
+body{
+    background-size: contain;
+    background: url("https://i.imgur.com/E1zNNaX.png") no-repeat top;
+}
+
+/* Class Selector */
+
+
+
 /* Necessary ID Selectors */
+#title {
+    color: whitesmoke;
+    text-align: center;
+}
+#description {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+#survey-form{
+    max-width: 500px;
+    min-height: 2000px;
+    margin-inline: auto;
+    padding: 20px;
+
+    background: rgba(0,0,0,0.75);
+    color: whitesmoke;
+}
