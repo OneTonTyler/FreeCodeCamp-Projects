@@ -1,0 +1,56 @@
+
+/* Text */
+* {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* Background */
+body{
+    background-color: darkgray;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Required ID's */
+#main {
+
+}
+#title {
+
+}
+
+#img-div {
+    display: inline-grid;
+    grid-template-columns: auto;
+
+    padding: 10px;
+    background-color: white;
+}
+#img-caption {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+#image{
+    justify-self: center;
+    align-content: center;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Tribute Content */
+#tribute-info {
+    display: grid;
+    grid-template-columns: 500px;
+
+    justify-content: center;
+    justify-items: center;
+}
+
+#tribute-link {
+    font-weight: bold;
+}
