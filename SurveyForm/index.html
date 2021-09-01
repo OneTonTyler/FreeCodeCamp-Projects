@@ -15,7 +15,95 @@
 
     <main>
         <div id="survey-form">
-            Some Text here
+            <form id="display-form-content">
+                <div class="form-field">
+                    <label for="name-label">Name</label><br>
+                    <input type="text" id="name-label" name="name" placeholder="Enter your name"><br>
+                </div>
+
+                <div class="form-field">
+                    <label for="email-label">Email</label><br>
+                    <input type="email" id="email-label" name="email" placeholder="Enter your email"><br>
+                </div>
+
+                <div class="form-field">
+                    <label for="age-label">Age <span style="font-size: xx-small; ">(Not Optional)</span></label><br>
+                    <input type="number" id="age-label" name="age" placeholder="age" min="1" max="106"><br>
+                </div>
+
+                <div class="form-field">
+                    <label for="about-label">Which best describes you?</label><br>
+                    <select id="about-label" name="about">
+                        <option value="" disabled selected>Select One</option>
+                        <option value="charismatic">Charismatic</option>
+                        <option value="smart">Smart</option>
+                        <option value="no_feelings">No Feelings</option>
+                        <option value="impulsive">Impulsive</option>
+                        <option value="winner">Winner</option>
+                        <option value="never_wrong">Never Wrong</option>
+                    </select><br>
+                </div>
+
+                <div>
+                    <label>How is your mood today?</label><br>
+
+                    <input type="radio" id="happy" name="mood">
+                    <label for="happy">Happy</label><br>
+
+                    <input type="radio" id="sad" name="mood">
+                    <label for="sad">Sad</label><br>
+
+                    <input type="radio" id="angry" name="mood">
+                    <label for="angry">Angry</label><br>
+
+                    <input type="radio" id="relaxed" name="mood">
+                    <label for="relaxed">Relaxed</label><br>
+                </div>
+
+                <div class="form-field">
+                    <label for="role-model">Select your favorite role model</label><br>
+                    <select id="role-model" name="role-model">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="singleton">Tyler Singleton</option>
+                        <option value="singleton">Tyler Singleton</option>
+                        <option value="singleton">Tyler Singleton</option>
+                        <option value="singleton">Tyler Singleton</option>
+                        <option value="singleton">Tyler Singleton</option>
+                        <option value="singleton">Tyler Singleton</option>
+                    </select><br>
+                </div>
+
+                <div>
+                    <label>What would you like to improve?</label><br>
+
+                    <input type="checkbox" id="background" name="imporoved">
+                    <label for="background">Background</label><br>
+
+                    <input type="checkbox" id="layout" name="improved">
+                    <label for="layout">Layout</label><br>
+
+                    <input type="checkbox" id="font" name="improved">
+                    <label for="font">Font</label><br>
+
+                    <input type="checkbox" id="color" name="improved">
+                    <label for="color">Color</label><br>
+
+                    <input type="checkbox" id="usability" name="improved">
+                    <label for="usability">Usability</label><br>
+
+                    <input type="checkbox" id="content" name="improved">
+                    <label for="content">Content</label><br>
+                </div>
+
+                <div class="form-field">
+                    <label for="additional-comments">Additional Comments to help us better ourselves</label>
+                    <textarea id="additional-comments" name="additional-comments"></textarea>
+                </div>
+
+                <input type="submit" value="Submit" id="submit">
+
+            </form>
+
         </div>
     </main>
 </body>
