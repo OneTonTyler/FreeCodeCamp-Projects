@@ -1,27 +1,21 @@
 /* Webpage setup */
 * {
-    box-sizing: border-box; /* Makes like box model work like I'd expect */
+    box-sizing: border-box; /* Makes my box model work like I'd expect */
 }
 body {
     font-family: 'Roboto', sans-serif;
 }
 /* Necessary Selectors */
 #header {
-    display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto;
 
     align-items: end;
 }
-.logo {
-    font-family: 'Rampart One', cursive;
-    font-size: x-large;
-}
 #header-img {
     height: 25px;
 }
 #nav-bar {
-    display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 25px;
 }
@@ -29,20 +23,27 @@ body {
 /* Media Query to change display based on screen width */
 @media (max-width: 500px){
     #nav-bar {
-        display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(auto-fill, auto);
 
         justify-items: center;
     }
     #header {
-        display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(auto-fill, auto);
 
         justify-content: center;
         align-items: center;
     }
+}
+
+/* Classes */
+.logo {
+    font-family: 'Rampart One', cursive;
+    font-size: x-large;
+}
+.grid {
+    display: grid;
 }
 
 #video{}
