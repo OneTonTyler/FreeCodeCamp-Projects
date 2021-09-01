@@ -24,7 +24,10 @@ textarea {
     text-align: center;
     font-size: 20px;
 }
-
+/* Necessary Selectors*/
+#name-label{}
+#email-label{}
+#number-label{}
 /* Content */
 #survey-form {
     font-size: larger;

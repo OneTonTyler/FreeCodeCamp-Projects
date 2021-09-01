@@ -14,26 +14,26 @@
         help me collect all your personal information</p>
 
     <main>
-        <div id="survey-form">
-            <form id="display-form-content">
+        <form id="survey-form">
+            <div id="display-form-content">
                 <div class="form-field">
-                    <label for="name-label">Name</label><br>
-                    <input type="text" id="name-label" name="name" placeholder="Enter your name"><br>
+                    <label id="name-label" for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
                 </div>
 
                 <div class="form-field">
-                    <label for="email-label">Email</label><br>
-                    <input type="email" id="email-label" name="email" placeholder="Enter your email"><br>
+                    <label id="email-label" for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
                 </div>
 
                 <div class="form-field">
-                    <label for="age-label">Age <span style="font-size: xx-small; ">(Not Optional)</span></label><br>
-                    <input type="number" id="age-label" name="age" placeholder="age" min="1" max="106"><br>
+                    <label id="number-label" for="number">Age <span style="font-size: xx-small; ">(Not Optional)</span></label><br>
+                    <input type="number" id="number" name="age" placeholder="age" min="1" max="106"><br>
                 </div>
 
                 <div class="form-field">
-                    <label for="about-label">Which best describes you?</label><br>
-                    <select id="about-label" name="about">
+                    <label for="about">Which best describes you?</label><br>
+                    <select id="about" name="about">
                         <option value="" disabled selected>Select One</option>
                         <option value="charismatic">Charismatic</option>
                         <option value="smart">Smart</option>
@@ -47,22 +47,22 @@
                 <div>
                     <label>How is your mood today?</label><br>
 
-                    <input type="radio" id="happy" name="mood">
+                    <input type="radio" id="happy" name="mood-good" value="happy">
                     <label for="happy">Happy</label><br>
 
-                    <input type="radio" id="sad" name="mood">
+                    <input type="radio" id="sad" name="mood-bad" value="sad">
                     <label for="sad">Sad</label><br>
 
-                    <input type="radio" id="angry" name="mood">
+                    <input type="radio" id="angry" name="mood-bad" value="angry">
                     <label for="angry">Angry</label><br>
 
-                    <input type="radio" id="relaxed" name="mood">
+                    <input type="radio" id="relaxed" name="mood-good" value="relaxed">
                     <label for="relaxed">Relaxed</label><br>
                 </div>
 
                 <div class="form-field">
-                    <label for="role-model">Select your favorite role model</label><br>
-                    <select id="role-model" name="role-model">
+                    <label for="dropdown">Select your favorite role model</label><br>
+                    <select id="dropdown" name="role-model">
                         <option value="" disabled selected>Select an option</option>
                         <option value="singleton">Tyler Singleton</option>
                         <option value="singleton">Tyler Singleton</option>
@@ -76,22 +76,22 @@
                 <div>
                     <label>What would you like to improve?</label><br>
 
-                    <input type="checkbox" id="background" name="imporoved">
+                    <input type="checkbox" id="background" name="imporoved" value="background">
                     <label for="background">Background</label><br>
 
-                    <input type="checkbox" id="layout" name="improved">
+                    <input type="checkbox" id="layout" name="improved" value="layout">
                     <label for="layout">Layout</label><br>
 
-                    <input type="checkbox" id="font" name="improved">
+                    <input type="checkbox" id="font" name="improved" value="font">
                     <label for="font">Font</label><br>
 
-                    <input type="checkbox" id="color" name="improved">
+                    <input type="checkbox" id="color" name="improved" value="color">
                     <label for="color">Color</label><br>
 
-                    <input type="checkbox" id="usability" name="improved">
+                    <input type="checkbox" id="usability" name="improved" value="usability">
                     <label for="usability">Usability</label><br>
 
-                    <input type="checkbox" id="content" name="improved">
+                    <input type="checkbox" id="content" name="improved" value="content">
                     <label for="content">Content</label><br>
                 </div>
 
@@ -102,9 +102,9 @@
 
                 <input type="submit" value="Submit" id="submit">
 
-            </form>
+            </div>
 
-        </div>
+        </form>
     </main>
 </body>
 </html>
