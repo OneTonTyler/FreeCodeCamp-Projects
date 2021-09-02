@@ -12,7 +12,8 @@ body {
     grid-template-rows: 30px;
 
     align-items: end;
-    margin-bottom: 30px;
+    padding-top: 5px;
+
 }
 #header-img {
     height: 25px;
@@ -21,12 +22,12 @@ body {
     grid-template-columns: repeat(3, auto);
     column-gap: 25px;
 }
-#nav-link {
-    /* Nothing Worth adding here yet */
-}
+.nav-link {/* Requirement */}
+#email{/* Requirement */}
+#submit{/* Requirement */}
 
 /* Signup */
-#signup-form {
+#form {
     grid-template-columns: auto;
 
     text-align: center;
@@ -51,6 +52,35 @@ body {
         justify-content: center;
         align-items: center;
     }
+    #signup-form {
+        margin-top: 60px;
+    }
+}
+
+/* Main Content */
+#feature {
+    margin-top: 50px;
+}
+#content {
+    grid-template-columns: auto minmax(0px, 750px);
+    grid-template-rows: repeat(auto-fill, auto);
+
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+#video-container, iframe{
+    display: flex;
+    justify-content: center;
+
+    border: none;
+}
+#video{/* Required */}
+#pricing {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+
+    justify-content: space-evenly;
 }
 
 /* Classes */
@@ -61,7 +91,32 @@ body {
 .grid {
     display: grid;
 }
+.content-img {
+    align-content: end;
+}
+.feature-content h1{
+    font-size: large;
+    font-weight: bold;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-#video{}
-#email{}
-#submit{}
+    background-color: white;
+}
+.content {
+    padding: 10px;
+}
+.sticky + .content {
+    padding-top: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: max-content;
+}
+.container {
+    padding: 2px 16px;
+}
