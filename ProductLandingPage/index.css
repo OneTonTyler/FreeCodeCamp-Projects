@@ -5,23 +5,39 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-/* Necessary Selectors */
+
+/* Heading setup */
 #header {
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto;
+    grid-template-rows: 30px;
 
     align-items: end;
+    margin-bottom: 30px;
 }
 #header-img {
     height: 25px;
 }
 #nav-bar {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     column-gap: 25px;
 }
+#nav-link {
+    /* Nothing Worth adding here yet */
+}
 
+/* Signup */
+#signup-form {
+    grid-template-columns: auto;
+
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.form-input {
+    margin-top: 15px;
+}
 /* Media Query to change display based on screen width */
-@media (max-width: 500px){
+@media (max-width: 600px){
     #nav-bar {
         grid-template-columns: auto;
         grid-template-rows: repeat(auto-fill, auto);
@@ -47,6 +63,5 @@ body {
 }
 
 #video{}
-#form{}
 #email{}
 #submit{}
