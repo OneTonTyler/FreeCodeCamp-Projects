@@ -1,0 +1,42 @@
+/* Main content */
+#main-doc {
+    grid-template-columns: 250px auto auto;
+    column-gap: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+.main-section {
+    text-align: justify;
+}
+.main-section, p {
+    margin-left: 16px;
+}
+
+/* Section headers */
+header {
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+#nav-bar {
+    grid-template-rows: 200px repeat(auto-fill, 30px);
+    grid-row-gap: 30px;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Helpful bits */
+.grid{
+    display: grid;
+}
+.content{
+    padding: 16px;
+}
+.vl {
+    border-left: 2px solid darkgrey;
+    height: 100%;
+}
