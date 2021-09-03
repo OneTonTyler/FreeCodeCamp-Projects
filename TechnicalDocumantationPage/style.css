@@ -1,16 +1,14 @@
 /* Main content */
 #main-doc {
-    grid-template-columns: 250px auto auto;
+    grid-template-columns: auto;
     column-gap: 16px;
 
     font-family: 'Roboto', sans-serif;
     font-size: medium;
 }
 .main-section {
+    margin-left: 250px;
     text-align: justify;
-}
-.main-section, p {
-    margin-left: 16px;
 }
 
 /* Section headers */
@@ -21,8 +19,14 @@ header {
 
 /* Navigation Bar */
 #nav-bar {
-    grid-template-rows: 200px repeat(auto-fill, 30px);
-    grid-row-gap: 30px;
+    grid-template-columns: 234px;
+    grid-template-rows: 200px repeat(auto-fill, auto);
+    grid-row-gap: 35px;
+
+    position: fixed;
+    margin: 0 16px 0 0;
+
+    border-right: lightgray solid 2px;
 }
 .nav-link {
     text-decoration: none;
@@ -36,7 +40,8 @@ header {
 .content{
     padding: 16px;
 }
-.vl {
+.vertical-line {
+    margin-left: 250px;
     border-left: 2px solid darkgrey;
     height: 100%;
 }
