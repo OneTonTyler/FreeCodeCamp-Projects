@@ -40,8 +40,13 @@ header {
 .content{
     padding: 16px;
 }
-.vertical-line {
-    margin-left: 250px;
-    border-left: 2px solid darkgrey;
-    height: 100%;
+
+/* Media */
+@media (max-width: 700px) {
+    .main-section {
+        margin-left: 0;
+    }
+    #nav-bar {
+        display: none;
+    }
 }
