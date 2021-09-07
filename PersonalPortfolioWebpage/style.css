@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+    color: #FFFFFF;
+}
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: xx-large;
+}
+* {
+    box-sizing: border-box;
+}
+/* Navigation */
+#navbar {
+    background-color: #961EE1;
+
+    grid-template-rows: 30px;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 30px;
+
+    justify-content: end;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+.nav-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Sections */
+#welcome-section {
+    background-color: #1ECBE1;
+    min-height: 100vh;
+
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+#projects {
+    background-color: #6AE11E;
+    min-height: 100vh;
+}
+#contact {
+    background-color: #E1341E;
+    min-height: 100vh;
+}
+/* Useful Classes */
+.grid {
+    display: grid;
+}
+.padding {
+    padding: 16px;
+}
