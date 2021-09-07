@@ -7,6 +7,8 @@ body {
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: xx-large;
+
+    text-align: center;
 }
 * {
     box-sizing: border-box;
@@ -39,9 +41,15 @@ h1 {
     align-items: center;
     text-align: center;
 }
+#about-me-content {
+    max-width: 800px;
+    font-size: large;
+}
 #projects {
     background-color: #6AE11E;
     min-height: 100vh;
+
+    grid-template-rows: max-content auto;
 }
 #contact {
     background-color: #E1341E;
@@ -53,4 +61,20 @@ h1 {
 }
 .padding {
     padding: 16px;
+}
+.project-tile {
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 100px 100px;
+
+    border: #000 solid 2px;
+    margin-bottom: auto;
+}
+.tiles {
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: auto;
+
+    align-self: start;
+    justify-content: center;
+
+    gap: 30px;
 }
