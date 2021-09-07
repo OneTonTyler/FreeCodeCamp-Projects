@@ -18,7 +18,7 @@ header {
 }
 
 /* Navigation Bar */
-#nav-bar {
+#navbar {
     grid-template-columns: 234px;
     grid-template-rows: 200px repeat(auto-fill, auto);
     grid-row-gap: 35px;
